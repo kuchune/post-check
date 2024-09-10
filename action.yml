@@ -24,8 +24,8 @@ runs:
         sparse-checkout: |
           common/sendData.py
         sparse-checkout-cone-mode: false
-    - run: |
-        python3 common/sendData.py
+    - run: python3 common/sendData.py
+      shell: bash
       env:
         PROJECT: "${{github.repository}}"
         NUMBER: "${{github.event.pull_request.number}}"
