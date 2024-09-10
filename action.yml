@@ -1,10 +1,6 @@
 name: 'Post-Check'
 description: 'Post Step After Check, eg. comment, add reviewers'
 inputs:
-  needs-job:  # id of input
-    description: 'needs job name'
-    required: true
-    default: ''
   comment-file:
     description: 'comment file path'
     required: true
